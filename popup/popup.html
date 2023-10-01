@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extenssion!</title>
+  <link href="uikit.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="extension">
+    <div class="extension-flex uk-flex uk-flex-column">
+      <div class="menu" uk-sticky>
+        
+        <div class="uk-card uk-card-body uk-card-default uk-flex uk-flex-between uk-padding-small">
+
+          <button id="glass" class="eye-drop uk-button uk-button-default" type="button" uk-tooltip="title: Pick a color; delay:500">
+            <span uk-icon="icon: search"></span>
+          </button>   
+
+          <div class="uk-button-group">
+            <button id="copy" class="clear uk-button uk-button-default" type="button" uk-tooltip="title: Copy all; delay:500">
+              <span uk-icon="icon: copy"></span>
+            </button>
+            <div class="uk-inline">
+                <button class="uk-button uk-button-default uk-padding-remove" type="button">
+                  <span uk-icon="icon: triangle-down"></span>
+                </button>
+                <div class="dropdown" uk-dropdown="duration:20; mode: click">
+                  <ul class="uk-nav uk-dropdown-nav">
+                    <label class="uk-display-block uk-width-1-1">
+                      <input id="copy-array" class="uk-radio" type="radio" name="radio2">
+                      <span class="uk-text-default">&#91;...&#93; as Array</span>
+                    </label>
+                    
+                    <li class="uk-nav-divider uk-margin-small-bottom uk-margin-small-top"></li>
+                    
+                    <label class="uk-display-block uk-width-1-1">
+                      <input id="copy-object" class="uk-radio" type="radio" name="radio2">
+                      <span class="uk-text-default">&#123;...&#125; as Object</span>
+                    </label>
+                  </ul>
+                </div>
+            </div>
+          </div>
+
+          <button id="show-clear-modal" class="clear uk-button uk-button-default" type="button" uk-tooltip="title: Remove all colors; delay:500">
+            <span uk-icon="icon: trash"></span>
+          </button>
+        </div>
+
+        <div class="notif"><div class="message"></div></div>
+      </div>
+
+      <div class="color-box uk-card uk-card-small uk-card-body">
+        <div id="box" class="uk-flex uk-flex-column uk-animation" tabindex="0" uk-sortable></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="clear-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <h2 class="uk-modal-title uk-text-large">Remove all colors?</h2>
+      <p></p>
+      <p class="uk-text-right uk-flex uk-flex-between">
+        <button id="clear" class="uk-button uk-button-primary uk-modal-close" type="button">Yes</button>
+        <button class="uk-button uk-button-default uk-modal-close" type="button">No</button>
+      </p>
+    </div>
+  </div>
+
+  <div id="dummy" class="uk-hidden">
+    <div class="color-item uk-flex uk-flex-between uk-flex-middle">
+      <div class="color uk-sortable-handle"></div>
+      <button type="button" class="color-hex uk-button uk-button-link uk-text-large"></button>
+      <span id="remove" class="remove-color" uk-icon="close"></span>
+    </div>
+  </div>
+
+  <script src="uikit.min.js"></script>
+  <script src="uikit-icons.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
