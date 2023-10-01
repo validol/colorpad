@@ -23,7 +23,7 @@ Individual color code or batch export as Array / Object to clipboard.
 
 <img src="docs/dropdown.png">
 
-
+JavaScript Array:
 ```javascript
 [
   "#ffffff",
@@ -34,6 +34,7 @@ Individual color code or batch export as Array / Object to clipboard.
   ...
 ]
 ```
+JavaScript Object:
 ```javascript
 {
   "1f2328": "#1f2328",
