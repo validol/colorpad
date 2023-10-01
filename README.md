@@ -9,9 +9,12 @@ Colors are stored in Local storage.
 
 ## Installation
 
+<img src="docs/pin_2.png">
+
 1. In Chrome browser enable "Developer mode" in "More tools" > "Extensions" by toggling the switch on the top right corner of the page. 
 2. Click on "Load unpacked" button.
 3. Select the folder containing this extension and click on "Select Folder".
+4. Pin an extension to your toolbar, by clicking the Extensions Menu icon next to your profile avatar. Each extension listed will have a pushpin icon to the right of it. 
 
 ## Color picker
 EyeDropper API is used to pick a color.
