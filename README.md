@@ -1,6 +1,6 @@
 # Colorpad
 
-#### Simple color picker Chrome Extension
+**Simple color picker Chrome Extension**
 <!-- <img src="docs/chrome_48x48.png"> -->
 
 Colors are stored in Local storage.
@@ -45,4 +45,5 @@ Individual color code or batch export as Array or Object to clipboard.
 ```
 ## Clear all
 Remove all colors colors
+
 <img src="docs/remove.png">
