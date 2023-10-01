@@ -1,9 +1,8 @@
 # Colorpad
 
 **Simple color picker Chrome Extension**
-<!-- <img src="docs/chrome_48x48.png"> -->
 
-Colors are stored in Local storage.
+All colors are stored in Local storage for later usage.
 
 <img src="docs/blank.png">
 
@@ -21,8 +20,13 @@ EyeDropper API is used to pick a color.
 
 <img src="docs/pick_1.png">
 
+## Sorting
+Drap & drop sorting colors is available
+
+<img src="docs/sorting.png">
+
 ## Copy to clipboard
-Individual color code or batch export as Array / Object to clipboard.
+Export to clipboard individual color code or batch export as Array / Object.
 
 <img src="docs/dropdown.png">
 
@@ -47,7 +51,3 @@ JavaScript Object:
   ...
 }
 ```
-## Clear all
-Removes all colors
-
-<img src="docs/remove.png">
