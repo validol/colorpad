@@ -19,7 +19,7 @@ EyeDropper API is used to pick a color.
 <img src="docs/pick_1.png">
 
 ## Copy to clipboard
-Individual color code or batch export as Array or Object to clipboard.
+Individual color code or batch export as Array / Object to clipboard.
 
 <img src="docs/dropdown.png">
 
@@ -44,6 +44,6 @@ Individual color code or batch export as Array or Object to clipboard.
 }
 ```
 ## Clear all
-Remove all colors colors
+Removes all colors
 
 <img src="docs/remove.png">
